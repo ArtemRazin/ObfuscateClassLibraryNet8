@@ -1,2 +1,3 @@
-dotnet build -c release
-"%ProgramFiles(x86)%\ArmDot\ArmDotConsole.exe" --input-assembly .\bin\Release\net8.0\ObfuscateClassLibraryNet8.dll --enable-obfuscate-names --output-assembly .\bin\Release\net8.0\ObfuscateClassLibraryNet8-obfuscated.dll
+dotnet build ObfuscateClassLibraryNet8.csproj -c release
+REM "%ProgramFiles(x86)%\ArmDot\ArmDotConsole.exe" --input-assembly .\bin\Release\net8.0\ObfuscateClassLibraryNet8.dll --enable-obfuscate-names --output-assembly .\bin\Release\net8.0\ObfuscateClassLibraryNet8-obfuscated.dll
+"%ProgramFiles(x86)%\ArmDot\ArmDotConsole.exe" --build --project-path "ObfuscateClassLibraryNet8.armdotproj"
